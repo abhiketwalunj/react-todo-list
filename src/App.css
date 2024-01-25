@@ -1,38 +1,90 @@
-.App {
-  text-align: center;
+body {
+  background-color:yellow;
+  margin: 0; 
+  padding: 0; 
+} 
+.todo-container {
+  background-color: wheat;
+  max-width: 400px;
+  margin: auto;
+  padding: 20px;
+  border: 4px solid brown;
+  border-radius: 10px;
+  margin-top: 15px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.header {
+  font-size: 25px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  margin-left: 130px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.input-container {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  margin-bottom: 10px;
+  height: 50px;
+}
+
+input {
+  flex: 1;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-right: 10px;
+}
+
+button {
+  padding: 8px;
+  background-color: #4caf50;
   color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+
 }
 
-.App-link {
-  color: #61dafb;
+ul {
+  list-style: none;
+  padding: 0;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color:white;
+  padding: 10px;
+  margin-bottom: 8px;
+  border-radius: 4px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.action-buttons {
+  display: flex;
+}
+
+.action-buttons button {
+  margin-left: 5px;
+  padding: 6px;
+  background-color: #f44336;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.action-buttons2{
+  background-color:green;
+}
+
+.delete-all-btn {
+  padding: 10px;
+  background-color: #f44336;
+  color: black;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 10px;
+  margin-left: 140px;
 }
